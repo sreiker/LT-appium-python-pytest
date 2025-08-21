@@ -24,6 +24,7 @@ pipeline {
     stage('Test') {
       steps {
         sh 'python3 -m pip install Appium-Python-Client'
+        sh 'pip3 install pytest'
         sh 'pytest tests/test_android.py'
       }
     }
