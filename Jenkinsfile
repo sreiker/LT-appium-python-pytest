@@ -23,8 +23,7 @@ pipeline {
 
     stage('Test') {
       steps {
-        sh 'python3 -m pip install selenium'
-        sh 'brew install pytest'
+        sh 'python3 -m pip install appium'
         sh 'pytest tests/test_android.py'
       }
     }
