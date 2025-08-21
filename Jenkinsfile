@@ -17,7 +17,7 @@ pipeline {
       steps {
         checkout([$class: 'GitSCM',
                   branches: [[name: '*/main']],
-                  userRemoteConfigs: [[url: 'https://github.com/sreiker/python']]])
+                  userRemoteConfigs: [[url: 'https://github.com/sreiker/LT-appium-python-pytest']]])
       }
     }
 
