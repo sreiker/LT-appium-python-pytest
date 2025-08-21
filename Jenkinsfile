@@ -25,7 +25,7 @@ pipeline {
       steps {
         sh 'python3 -m pip install selenium'
         sh 'python3 -m pip install pytest'
-        sh 'python3 test1.py'
+        sh 'pytest tests/test_android.py'
       }
     }
     stage('Report'){
